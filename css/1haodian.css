@@ -264,9 +264,7 @@ font-weight:bold;}
 .chehualeft{
 	width:245px;height:398px;float:left;
 }
-.chehualeft1{
-	width:255px;height:398px;float:left;
-}
+
 .chehualeftone{
 	width:230px;height:80px;font-size: 12px;line-height:20px;
 	padding-left:15px;padding-top:10px;margin-bottom:5px;    
@@ -310,8 +308,27 @@ font-weight:bold;}
 .chehualeftfour a{
 	float:left;
 }
-
-
+.chehualeft1{
+	width:255px;height:398px;float:left;
+}
+.chehualeft1one{
+	width:250px;height:110px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;font-size:12px;padding-top:20px; position: relative;   
+}
+.chehualeft1one a{
+	display:block;margin-top:5px;margin-left:20px;     
+}
+.chehualeft1one img{
+	position:absolute; top:20px;right:20px;
+}
+.chehualeft1two{
+	width:250px;height:130px;border-left:1px solid #ccc;font-size:12px;padding-top:20px; position: relative;  
+}
+.chehualeft1two a{
+	display:block;margin-top:5px;margin-left:20px;     
+}
+.chehualeft1two img{
+	position:absolute; top:20px;right:20px;
+}
 
 
 .bannernavcenter{
