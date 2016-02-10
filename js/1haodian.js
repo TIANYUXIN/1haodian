@@ -249,8 +249,10 @@ var tex=$(".shousuo2")[0];
         hover(zhang1,function(){
         	zhang2.style.height=0+"px";
         	animate(zhang2,{height:130},60,Tween.Linear);
+          zhang2.style.display="block";
         },function(){
         	animate(zhang2,{height:0},60,Tween.Linear);
+          zhang2.style.display="none";
         })
 
 
@@ -355,11 +357,13 @@ var tex=$(".shousuo2")[0];
         word1[j].style.display="none";
         word[j].style.fontWeight="normal";
         word[j].style.textDecoration="none";
+        word[j].style.color="black";
 
       }
       word1[this.index].style.display="block";
       this.style.fontWeight="bold";
       this.style.textDecoration="underline";
+      this.style.color="#c15b00";
     }
   }
 

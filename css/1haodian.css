@@ -90,7 +90,7 @@ padding-left:15px;  }
 .zhang2{
 	width:200px;height:130px;position: absolute;left:-100px;
 	top:26px;overflow:hidden;background: white;
-	border:1px solid #ccc;border-top:none;
+	border:1px solid #ccc;border-top:none;display:none; 
 }
 .zhang2 img{
 	margin-left: 5px;float:left;margin-top:20px;
