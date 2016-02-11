@@ -106,17 +106,49 @@ window.onload=function(){
 */
 
 //右移
-var chehua=$(".chehua")[0];
+var chehua=$(".chehua");
 var zuoyi=$(".bannernavleft1");
 for(var i=0;i<zuoyi.length;i++){
+  zuoyi[i].index=i;
+  for(var j=0;j<chehua.length;j++){
+     
+     zuoyi[i].onmouseover=function(){
+       zuoyi[this.index].style.paddingLeft="10"+"px";
+       chehua[this.index].style.display="block";
+     }
+     zuoyi[i].onmouseout=function(){
+      zuoyi[this.index].style.paddingLeft="0"+"px";
+      chehua[this.index].style.display="none";
+      
+     }
+     chehua[j].index=j;
+     chehua[j].onmouseover=function(){
+      chehua[this.index].style.display="block";
+      zuoyi[this.index].style.paddingLeft="10"+"px";
+     }
+     chehua[j].onmouseout=function(){
+      chehua[this.index].style.display="none";
+      zuoyi[this.index].style.paddingLeft="0"+"px";
+     }
+
+  }
+}
+
+
+/*for(var i=0;i<zuoyi.length;i++){
 	zuoyi[i].index=i;
    zuoyi[i].onmouseover=function(){
 	zuoyi[this.index].style.paddingLeft="10"+"px";
-	chehua.style.display="block";
+      for(var j=0;j<chehua.length;j++){
+        chehua[j].style.display="block";
+      }
    }
    zuoyi[i].onmouseout=function(){
 	zuoyi[this.index].style.paddingLeft="0"+"px";
-	chehua.style.display="none";
+      for(var j=0;j<chehua.length;j++){
+        chehua[j].style.display="none";
+      }
+	
    }
    chehua.onmouseover=function(){
       chehua.style.display="block";
@@ -124,7 +156,7 @@ for(var i=0;i<zuoyi.length;i++){
     chehua.onmouseout=function(){
       chehua.style.display="none";
     }
-}
+}*/
 
 //小轮播
 function aa(c){

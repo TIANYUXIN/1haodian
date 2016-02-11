@@ -259,7 +259,7 @@ font-weight:bold;}
 }
 .chehua{
 	width:990px;height:398px;z-index:5;background:white;
-	position: absolute;left:210px;top:0;dis play:none;   
+	position: absolute;left:210px;top:0;display:none;   
 }
 .chehualeft{
 	width:245px;height:398px;float:left;
@@ -321,7 +321,7 @@ font-weight:bold;}
 	position:absolute; top:20px;right:20px;
 }
 .chehualeft1two{
-	width:250px;height:130px;border-left:1px solid #ccc;font-size:12px;padding-top:20px; position: relative;  
+	width:250px;height:110px;border-left:1px solid #ccc;font-size:12px;padding-top:20px; position: relative;  
 }
 .chehualeft1two a{
 	display:block;margin-top:5px;margin-left:20px;     
