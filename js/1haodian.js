@@ -172,7 +172,7 @@ function aa(c){
 		num1++;
 	//alert(num1);
 		if(num1==3){
-	        animate(imgbox,{left:-330*num1},600,Tween.Linear,function(){
+	        animate(imgbox,{left:0},600,Tween.Linear,function(){
 	        	imgbox.style.left=0;
 	        });
 	        num1=0;
@@ -199,7 +199,7 @@ function aa(c){
     		btntwo[this.index].style.backgroundColor="black";
     	},function(){
     		w=setInterval(move1,2000);
-    		num1=this.index+1;
+    		num1=this.index;
     		btntwo[this.index].style.backgroundColor="#ccc";
     		btnone[this.index].style.display="block";
     		animate(btnone[this.index],{width:25},2000,Tween.Linear)
@@ -214,7 +214,7 @@ function aa(c){
     			btnone[j].style.display="none";
     			btnone[j].style.width=0;
     		}
-    		btnone[this.index].style.width="30px";
+    		btnone[this.index].style.width="25px";
     		btnone[this.index].style.display="block";
     		animate(imgbox,{left:-330*this.index},600,Tween.Linear);
     	}
