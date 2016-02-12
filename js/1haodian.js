@@ -227,6 +227,20 @@ function aa(c){
 for(var i=0;i<8;i++){
 	aa(i);
 }
+// 百货小轮播图
+// function dd(){
+//   var baihuoone=$("baihuo1")[0];
+//   var baihuofive=$("baihuo5")[0];
+//   var baihuothree=$("baihuo3")[0];
+//   var num4=0;
+//   function move2(){
+//     num4++;
+//     if(num4==3){
+      
+//     }
+//   }
+// }
+
 
 /*for(var i=0;i<btnone.length;i++){
 	btnone[i].index=i;
