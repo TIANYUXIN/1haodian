@@ -227,20 +227,38 @@ function aa(c){
 for(var i=0;i<8;i++){
 	aa(i);
 }
-// 百货小轮播图
-// function dd(){
-//   var baihuoone=$("baihuo1")[0];
-//   var baihuofive=$("baihuo5")[0];
-//   var baihuothree=$("baihuo3")[0];
-//   var num4=0;
-//   function move2(){
-//     num4++;
-//     if(num4==3){
-      
-//     }
-//   }
-// }
-
+//百货小轮播图
+function dd(){
+  var baihuoone=$(".baihuo1")[0];
+  var baihuofive=$(".baihuo5")[0];
+  var baihuothree=$(".baihuo3")[0];
+  function moveleft(){
+    animate(baihuothree,{left:-100},600,Tween.Linear,function(){
+      baihuothree.appendChild(getFirst(baihuothree));
+      baihuothree.style.left=0+"px";
+    })
+  }
+  function moveright(){
+    var last=getLast(baihuothree);
+    baihuothree.insertBefore(last,getFirst(baihuothree));
+    baihuothree.style.left=-100+"px";
+    animate(baihuothree,{left:0},600,Tween.Linear);
+  }
+  var t=setInterval(moveleft,2000);
+  baihuoone.onmouseover=baihuofive.onmouseover=function(){
+    clearInterval(t);
+  }
+  baihuoone.onmouseout=baihuofive.onmouseout=function(){
+    t=setInterval(moveleft,2000);
+  }
+  baihuoone.onclick=function(){
+    moveright();
+  }
+  baihuofive.onclick=function(){
+    moveleft();
+  }
+}
+dd();
 
 /*for(var i=0;i<btnone.length;i++){
 	btnone[i].index=i;
